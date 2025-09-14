@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
+
+
 <body id="home">
   <div class="background-intro">
     <header style="font-size: 2rem;" class="header container">
@@ -39,9 +41,9 @@
     </header>
     <article class="introducao-interacao container">
 
-      <code>
-      <span class="tag">&lt;h1</span> <span class="attribute">style=</span><span class="mark">"</span>font: 500 3rem/1.5 <span class="mark">'</span>Montserrat<span class="mark">'</span>; color: 00223F;<span class="mark">"</span><span class="tag">&gt</span> Aprenda e Aprimore...<span class="tag">&lt/h1&gt<span>
-      </code>
+
+      <p><span class="tag">&lt;h1</span> <span class="attribute">style=</span><span class="mark">"</span>font: 500 3rem/1.5 <span class="mark">'</span>Montserrat<span class="mark">'</span>; color: 00223F;<span class="mark">"</span><span class="tag">&gt</span> Aprenda e Aprimore...<span class="tag">&lt/h1&gt<span></p>
+
       <!-- <button class="btn-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
           <mask id="a" width="32" height="32" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
@@ -53,6 +55,21 @@
         </svg>Executar Código</button> -->
     </article>
   </div>
+  <script type="module" src="./js/script.js"></script>
 </body>
+
+<script>
+  const body = document.querySelector("body");
+  const introCode = document.querySelector('.introducao-interacao')
+
+  function addClass() {
+    introCode.classList.toggle('teste')
+  }
+
+  body.addEventListener('click', addClass)
+
+  console.log(body);
+
+</script>
 
 </html>
