@@ -1,0 +1,17 @@
+.introducao-interacao p {
+  /* display: none; */
+  font: 500 3.75rem/1.35 "IBM Plex Mono", monospace;
+  color: var(--cor-2);
+}
+
+.introducao-interacao .tag {
+  color: var(--cor-p5);
+}
+
+.introducao-interacao .attribute {
+  color: var(--cor-t1);
+}
+
+.introducao-interacao .mark {
+  color: var(--cor-s2);
+}
