@@ -1,3 +1,55 @@
 .background-intro {
   background: linear-gradient(#ddeef5, var(--cor-p1));
 }
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.introducao h1 {
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url("../../img/icons/mascotes/css-mascote.svg");
+  top: -75px;
+  left: -40px;
+}
+
+.introducao button {
+  position: relative;
+}
+
+.introducao button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url("../../img/icons/mascotes/html-mascote.svg");
+  top: -50px;
+  left: -100px;
+}
+
+.introducao button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url("../../img/icons/mascotes/js-mascote.svg");
+  top: -75px;
+  right: -120px;
+}
+
+.introducao img {
+  border-radius: 8px;
+}
