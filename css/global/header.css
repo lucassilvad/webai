@@ -66,13 +66,17 @@
   border: 2px solid var(--cor-p6);
 }
 
-.nav li:last-child a:hover .ailabs-icon {
-  fill: var(--cor-p1);
-}
-
 .nav li:last-child a:hover {
   background: var(--cor-p6);
   color: var(--cor-p1);
+}
+
+.nav li:last-child a .ailabs-icon {
+  transition: 0.3s;
+}
+
+.nav li:last-child a:hover .ailabs-icon {
+  fill: var(--cor-p1);
 }
 
 .header .profile {
