@@ -89,11 +89,14 @@
   }
 }
 
+/* Apresentação Texto de Chamada */
+
 .apresentacao-projetos-text p {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .apresentacao-projetos-text p:before {
@@ -113,4 +116,43 @@
   .apresentacao-projetos-text p:before {
     width: 25%;
   }
+}
+
+/* Apresentação Vídeos */
+
+.apresentacao-projetos-videos {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 40px;
+}
+
+.apresentacao-projetos-videos::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 8px;
+  border-radius: 3px;
+  background: var(--cor-s1);
+  justify-self: end;
+  margin-bottom: 60px;
+  grid-column: 1/-1;
+}
+
+.apresentacao-videos-text {
+  display: grid;
+  align-content: space-between;
+  gap: 20px;
+}
+
+.apresentacao-projetos-videos img {
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(25, 45, 62, 0.35);
+}
+
+.apresentacao-videos-text-image {
+  margin-right: 120px;
+}
+
+.apresentacao-videos-image {
+  align-self: center;
 }
