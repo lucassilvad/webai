@@ -79,13 +79,38 @@
     </article>
   </div>
 
-  <article class="apresentacao-home container">
-    <h2 class="font-1-xl cor-p9">Seu laboratório de prática para<br><span class="apresentacao-titulo-destaque cor-p1">
-
+  <article class="apresentacao-home container" aria-labelledby="apresentacao-titulo">
+    <h2 id="apresentacao-titulo" class="font-1-xl cor-p9">Seu laboratório de prática para<br><span class="apresentacao-titulo-destaque cor-p1">
         <img class="icon" src="./img/icons/tag-icon.svg" alt="">
         <span>Desenvolvimento Web</span>
         <img class="icon" style="rotate: 180deg;" src="./img/icons/tag-icon.svg" alt="">
       </span></h2>
+    <section class="apresentacao-projetos">
+
+      <div class="apresentacao-projetos-intro">
+        <img src="./img/video-image.jpg" alt="" width="760" height="340px">
+        <div>
+          <p class="font-2-l cor-p9">Desde de projetos simples até complexos.</p>
+          <a class="btn-1 font-1-m cor-s4" href="./">
+            Ver Projetos
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+              <mask id="a" width="28" height="28" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+                <path fill="#0D5215" d="M0 .5h28v28H0z" />
+              </mask>
+              <g mask="url(#a)">
+                <path fill="#0D5215" d="M17.964 16.046H5.652c-.43 0-.794-.15-1.095-.451-.3-.3-.45-.665-.45-1.095 0-.43.15-.794.45-1.095.3-.3.666-.45 1.095-.45h12.312L12.891 7.88a1.478 1.478 0 0 1-.46-1.097c.005-.42.162-.786.472-1.096.31-.291.676-.439 1.097-.443.421-.004.787.149 1.097.46l7.7 7.7c.15.149.262.32.339.51a1.573 1.573 0 0 1 0 1.172 1.51 1.51 0 0 1-.339.511l-7.716 7.716a1.477 1.477 0 0 1-1.083.453c-.42 0-.784-.15-1.095-.453a1.507 1.507 0 0 1-.465-1.103c0-.425.155-.793.465-1.103l5.061-5.061Z" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="apresentacao-projetos-text">
+        <p class="font-1-xxl cor-p9">No WebAI, você não fica só assistindo a vídeos — aqui você aprende fazendo.</p>
+      </div>
+
+    </section>
+
   </article>
 
   <script type="module" src="./js/script.js"></script>

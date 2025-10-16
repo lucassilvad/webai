@@ -3,8 +3,11 @@
   padding-bottom: 120px;
 }
 
+/* Apresentação Título */
+
 .apresentacao-home h2 {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .apresentacao-titulo-destaque {
@@ -32,5 +35,82 @@
 @media (max-width: 560px) {
   .apresentacao-titulo-destaque span {
     padding: 8px 12px;
+  }
+}
+
+/* Apresentação Introdução a Projetos */
+
+.apresentacao-projetos-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.apresentacao-projetos-intro > img {
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(25, 45, 62, 0.35);
+}
+
+.apresentacao-projetos-intro p {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  padding: 16px 0px;
+}
+
+.apresentacao-projetos-intro p::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: auto;
+  background: var(--cor-p3);
+  border-radius: 4px;
+}
+
+@media (max-width: 880px) {
+  .apresentacao-projetos-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao-projetos-intro p {
+    max-width: 30ch;
+    margin-bottom: 16px;
+  }
+
+  .apresentacao-projetos-intro p::before {
+    width: 12px;
+  }
+
+  .apresentacao-projetos-intro a {
+    justify-self: start;
+  }
+}
+
+.apresentacao-projetos-text p {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.apresentacao-projetos-text p:before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 8px;
+  border-radius: 3px;
+  background: var(--cor-t1);
+}
+
+@media (max-width: 700px) {
+  .apresentacao-projetos-text p {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao-projetos-text p:before {
+    width: 25%;
   }
 }
