@@ -1,0 +1,182 @@
+.apresentacao-home {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Apresentação Título */
+
+.apresentacao-home h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.apresentacao-titulo-destaque {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .apresentacao-titulo-destaque img {
+    display: none;
+  }
+}
+
+.apresentacao-titulo-destaque span {
+  display: inline-block;
+  background: var(--cor-p4);
+  padding: 8px 28px;
+  border-radius: 20px;
+}
+
+@media (max-width: 560px) {
+  .apresentacao-titulo-destaque span {
+    padding: 8px 12px;
+  }
+}
+
+/* Apresentação Introdução a Projetos */
+
+.apresentacao-projetos-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.apresentacao-projetos-intro > img {
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(25, 45, 62, 0.35);
+}
+
+.apresentacao-projetos-intro p {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  padding: 16px 0px;
+}
+
+.apresentacao-projetos-intro p::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: auto;
+  background: var(--cor-p3);
+  border-radius: 4px;
+}
+
+@media (max-width: 880px) {
+  .apresentacao-projetos-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao-projetos-intro p {
+    max-width: 30ch;
+    margin-bottom: 16px;
+  }
+
+  .apresentacao-projetos-intro p::before {
+    width: 12px;
+  }
+
+  .apresentacao-projetos-intro a {
+    justify-self: start;
+  }
+}
+
+/* Apresentação Texto de Chamada */
+
+.apresentacao-projetos-text p {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.apresentacao-projetos-text p:before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 8px;
+  border-radius: 3px;
+  background: var(--cor-t1);
+}
+
+@media (max-width: 700px) {
+  .apresentacao-projetos-text p {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao-projetos-text p:before {
+    width: 25%;
+  }
+}
+
+/* Apresentação Vídeos */
+
+.apresentacao-projetos-videos {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 40px;
+}
+
+.apresentacao-projetos-videos::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 8px;
+  border-radius: 3px;
+  background: var(--cor-s1);
+  justify-self: end;
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .apresentacao-projetos-videos::before {
+    width: 25%;
+    margin-bottom: 0px;
+  }
+}
+
+.apresentacao-videos-text {
+  display: grid;
+  align-content: space-between;
+  gap: 28px;
+}
+
+.apresentacao-projetos-videos img {
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(25, 45, 62, 0.35);
+}
+
+.apresentacao-videos-text-image {
+  margin-right: 120px;
+}
+
+.apresentacao-videos-image {
+  align-self: end;
+}
+
+@media (max-width: 800px) {
+  .apresentacao-projetos-videos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .apresentacao-videos-text p {
+    text-align: right;
+  }
+
+  .apresentacao-videos-text-image {
+    justify-self: center;
+    margin: 0px;
+  }
+}
